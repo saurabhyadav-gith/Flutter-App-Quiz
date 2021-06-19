@@ -72,7 +72,7 @@ class MyAppState extends State<MyApp> {
                 questions: questions,
                 questionIndex: questionIndex,
               )
-            : Result(totalScore,reset),
+            : Result(totalScore, reset),
       ),
     );
   }

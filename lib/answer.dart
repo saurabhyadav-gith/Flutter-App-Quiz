@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 class Answer extends StatelessWidget {
@@ -9,9 +11,11 @@ class Answer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      child: RaisedButton(
-        color: Colors.blue,
-        textColor: Colors.white,
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          primary: Colors.blue,
+          onPrimary: Colors.white,
+        ),
         child: Text(answerText),
         onPressed: selectHandler,
       ),

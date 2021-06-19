@@ -22,12 +22,11 @@ class Result extends StatelessWidget {
             ),
             textAlign: TextAlign.center,
           ),
-          FlatButton(
+          OutlinedButton(
             onPressed: reset,
-            child: Text(
-              'Restart Quiz',
-            ),
-            textColor: Colors.purple,
+            child: Text('Retry Quiz'),
+            style:
+                OutlinedButton.styleFrom(side: BorderSide(color: Colors.black)),
           ),
         ],
       ),
